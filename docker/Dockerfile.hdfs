@@ -14,6 +14,7 @@ RUN curl -O http://www-us.apache.org/dist/hadoop/common/hadoop-${HADOOP_VERSION}
     mv hadoop-${HADOOP_VERSION} /usr/local/hadoop && \
     rm hadoop-${HADOOP_VERSION}.tar.gz
 
+ENV PASSWORD abc
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV HADOOP_INSTALL /usr/local/hadoop
 ENV HADOOP_HDFS_HOME $HADOOP_INSTALL
